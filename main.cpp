@@ -55,11 +55,11 @@ int main() {
     temp.fullname = "James Carter";
     if(pMyList.search(temp))
     {
-        cout<< "found: "<<temp<<endl;
+        cout<< "Found: "<<temp<<endl;
     }
     else cout<<"Not Found"<<endl;
-    cout<<"--------------"<<endl;
-    pMyList.display(); //placed at the end cause I'm getting a SIGBUS error and the program exits. 
+    cout<<"<----I deleted Trump before I added Biden---->"<<endl;
+    pMyList.display(); //placed at the end cause I'm getting a SIGBUS error and the program exits.
 
     return 0;
 }
