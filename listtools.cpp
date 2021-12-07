@@ -59,14 +59,13 @@ void MyList<T>::insertHead(T theData) {
 }
 
 template<class T>
-void MyList<T>::deleteHead()
+T MyList<T>::deleteHead()
 {
-    if(!head) return;
     Node<T> *discard;
     discard = head;
+    T deletedData = discard->data;
     head = head->link;
-    delete discard;
-
+    return deletedData;
 }
 
 template<class T>

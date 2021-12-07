@@ -26,7 +26,7 @@ template<class T>
 class MyList {
 public:
     void insertHead(T theData);
-    void deleteHead();
+    T deleteHead();
     bool search(T &target);
     void display();
 private:
